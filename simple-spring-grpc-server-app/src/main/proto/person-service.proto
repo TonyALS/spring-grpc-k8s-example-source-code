@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "br.com.tony.grpc.server";
+option java_multiple_files = true;
+
+package br.com.tony.grpc.server;
+
+service PersonService {
+  rpc create(PersonRequest) returns (PersonResponse);
+  rpc getAll(Empty) returns (People);
+}
+
+message Empty {}
+
+message People {
+  repeated PersonResponse people = 1;
+}
+
+message PersonRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message PersonResponse {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+}
