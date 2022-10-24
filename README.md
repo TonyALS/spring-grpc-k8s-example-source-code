@@ -2,7 +2,7 @@
 
 Esse repositório contém o código fonte da aplicação que está no container do repositório [Kubernetes Spring gRPC](https://github.com/TonyALS/k8s-simple-spring-grpc-app)
 
-No [application.properties](simple-spring-grpc-client-app/src/main/resources/application.properties) a linha
+No [application.properties](simple-spring-grpc-client-app/src/main/resources/application.properties) do simple-spring-grpc-client-app a linha
 `
 grpc.client.simple-spring-grpc-server-app.address=dns:///spring-grpc-server-lb:80
 `
